@@ -4,139 +4,230 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AprendeTI</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+
+    body {
+    background-color: #f5f7fa;
+    font-family: Arial;
+    }
+
+    h1 {
+    font-weight: bold;
+    }
+
+    .card {
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    </style>
+
+    <style>
+
+    @media (max-width: 600px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+    }
+
+    </style>
+
 </head>
 
 <body>
     
-    <header>
-        <h1>AprendeTI</h1>
+    <header class="bg-dark text-white text-center p-5 shadow">
+
+        <div class="container">
+
+            <h1 class="display-5 fw-bold mb-2">AprendeTI</h1>
+
+        </div>
+
     </header>
 
-    <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#quienes-somos">Quiénes Somos</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#contacto">Contacto</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+        <a class="navbar-brand" href="#">AprendeTI</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#quienes-somos">Quiénes Somos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <main>
+    <main class="container my-4">
 
-        <section id="inicio">
+        <section id="inicio" class="text-center p-4 bg-light rounded">
 
-            <h2>Inicio</h2>
-            <p>
+            <h2 class="mb-3">Inicio</h2>
+            
+            <p class="mb-3">
                 Bienvenido a AprendeTI, una plataforma orientada a ayudar a estudiantes y personas interesadas en tecnología a encontrar recursos prácticos para desarrollar habilidades reales en programación, bases de datos, sistemas operativos, redes y otras áreas tecnológicas.        
             </p>
 
+            <a href="#servicios" class="btn btn-primary">Ver Recursos</a>
         </section>
 
-        <section id="quienes-somos">
+        <section id="quienes-somos" class="container my-5">
+
+            <div class="row align-items-center g-4">
+
+                <!-- TEXTO -->
+                <div class="col-md-6">
+
+                    <h2 class="mb-3">Quiénes Somos</h2>
+
+                    <p class="mb-3">
+                        AprendeTI es una plataforma orientada a estudiantes, profesionales y personas interesadas en el aprendizaje de Tecnologías de la Información.
+                    </p>
+
+                    <p class="mb-3">
+                        Su propósito es ayudar a los usuarios a complementar los conocimientos teóricos adquiridos en universidades, cursos y recursos educativos con experiencias de aprendizaje más prácticas.
+                    </p>
+
+                    <p class="mb-3">
+                        Muchas veces, quienes estudian tecnología desean fortalecer sus habilidades mediante ejercicios, laboratorios, simuladores y proyectos que les permitan aplicar lo aprendido.
+                    </p>
+
+                    <p class="mb-0">
+                        Nuestro objetivo es apoyar el desarrollo de competencias prácticas que contribuyan al crecimiento académico, profesional y personal de cada usuario.
+                    </p>
+
+                </div>
+
+                <!-- IMAGEN -->
+                <div class="col-md-6 text-center">
+
+                    <img 
+                        src="imagenes/aprendeti-banner.png"
+                        alt="Ilustración representativa de AprendeTI"
+                        class="img-fluid rounded shadow"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="servicios" class="my-5">
             
-            <h2>Quiénes Somos</h2>
-            <p>
-                AprendeTI es una plataforma orientada a estudiantes, profesionales y personas interesadas en el aprendizaje de Tecnologías de la Información. Su propósito es ayudar a los usuarios a complementar los conocimientos teóricos adquiridos en universidades, cursos y recursos educativos con experiencias de aprendizaje más prácticas. Muchas veces, quienes estudian tecnología desean fortalecer sus habilidades mediante ejercicios, laboratorios, simuladores, proyectos y actividades interactivas que les permitan aplicar lo aprendido. AprendeTI busca facilitar ese proceso reuniendo recursos, herramientas y rutas de aprendizaje organizadas por áreas como programación, bases de datos, sistemas operativos, redes, ciberseguridad y otras disciplinas tecnológicas. Nuestro objetivo es apoyar el desarrollo de competencias prácticas que contribuyan al crecimiento académico, profesional y personal de cada usuario.
-            </p>
-
-            <img src="imagenes/aprendeti-banner.png" 
-                alt="Ilustración representativa de AprendeTI"
-                width="600">
-
-        </section>
-
-        <section id="servicios">
+            <h2 class="text-center mb-4">Servicios</h2>
             
-            <h2>Servicios</h2>
-            <ul>
+            <div class="row">
+                
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h5>Rutas de aprendizaje</h5>
+                        <p>Guías organizadas paso a paso.</p>
+                    </div>
+                </div>
 
-                <li>Rutas de aprendizaje organizadas por áreas tecnológicas.</li>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h5>Recursos prácticos</h5>
+                        <p>Plataformas y ejercicios reales.</p>
+                    </div>
+                </div>
 
-                <li>Directorio de recursos prácticos para programación, bases de datos, Linux, redes y ciberseguridad.</li>
-
-                <li>Recomendación de laboratorios, simuladores y plataformas interactivas.</li>
-
-                <li>Clasificación de recursos por nivel de dificultad y temática.</li>
-
-                <li>Acceso rápido a herramientas de aprendizaje seleccionadas y organizadas.</li>
-
-            </ul>
-
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h5>Laboratorios</h5>
+                        <p>Simuladores y práctica guiada.</p>
+                    </div>
+                </div>
+            
+            </div>
+        
         </section>
 
-        <section id="contacto">
+        <section id="contacto" class="my-5">
 
             <h2>Contacto</h2>
-            <p>
-                Correo:
-                <a href="mailto:contacto@aprendeti.com">
-                    contacto@aprendeti.com
-                </a>
-            </p>
 
-            <p>
-                Teléfono:
-                +593 98 756 4321
-            </p>
+            <form>
 
-            <p>
-                Dirección:
-                Carchi, Ecuador
-            </p>
+                <input type="text" class="form-control my-2" placeholder="Nombre">
 
-            <p>
-                Redes Sociales:
-            </p>
+                <input type="email" class="form-control my-2" placeholder="Correo">
 
-            <ul>
-                <li>
-                    <a href="https://facebook.com">Facebook</a>
-                </li>
+                <input type="text" class="form-control my-2" placeholder="Asunto">
 
-                <li>
-                    <a href="https://www.instagram.com">Instagram</a>
-                </li>
+                <textarea class="form-control my-2" rows="4" placeholder="Mensaje"></textarea>
 
-                <li>
-                    <a href="https://www.linkedin.com">LinkedIn</a>
-                </li>
+                <button class="btn btn-success">Enviar</button>
 
-            </ul>
+            </form>
 
         </section>
 
-        <section id="video">
-            <h2>Video Recomendado</h2>
+        <section id="video" class="my-5 container">
+            <h2 class="text-center mb-4">Video Recomendado</h2>
 
-            <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/4Nf3nBrWens"
-                title="Video de aprendizaje TI"
-                allowfullscreen>
-            </iframe>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
 
+                    <div class="ratio ratio-16x9 shadow rounded">
+                        <iframe 
+                            src="https://www.youtube.com/embed/4Nf3nBrWens"
+                            title="Video de aprendizaje TI"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                </div>
+            </div>
         </section>
 
     </main>
     
-    <aside>
-        <h2>Información adicional</h2>
-        <p>
-            AprendeTI se encuentra en constante crecimiento. Próximamente se incorporarán nuevas rutas de aprendizaje, más recursos prácticos y recomendaciones personalizadas para diferentes niveles de experiencia.
-        </p>
+    <aside class="container my-5 ">
+        <div class="row">
+            <div class="col-md-4">
 
-        <p>
-            Horario de actualización de contenido: Semanal.
-        </p>
-        
+                <div class="card p-3 shadow">
+                    <h2 class="h5 text-center">Información Adicional</h2>
+
+                    <p>
+                        AprendeTI se encuentra en constante crecimiento. Próximamente se incorporarán nuevas rutas de aprendizaje, más recursos prácticos y recomendaciones personalizadas.
+                    </p>
+
+                    <p class="mb-3">
+                        Horario de actualización: Semanal.
+                    </p>
+
+                    <a href="#inicio" class="btn btn-outline-primary btn-sm w-100">
+                        Volver al inicio
+                    </a>
+                </div>
+
+            </div>
+        </div>
     </aside>
 
-    <footer>
-            
-        <p>Desarrollado por: Fredy Bastidas</p>
-        <p>Asignatura: Desarrollo Web</p>
-        <p>Año: 2026</p>
-    
+    <footer class="bg-dark text-white text-center p-4 mt-5">
+        <div class="container">    
+            <p class="mb-1">Desarrollado por: Fredy Bastidas</p>
+            <p class="mb-1">Asignatura: Desarrollo Web</p>
+            <p class="mb-3">Año: 2026</p>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
